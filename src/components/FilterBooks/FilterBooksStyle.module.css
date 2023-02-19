@@ -1,0 +1,13 @@
+:root{
+    --bgColor: #B2DFDB;
+}
+.searchDiv{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgColor);
+    gap: 100px;
+}
+
+h5{
+    font-size: 30px;
+}
