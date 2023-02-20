@@ -17,7 +17,7 @@ export function BookMetadataInput(props) {
 
   function submit(event) {
     event.preventDefault();
-    dispatch(addBookAction({ title, author, date, genre }));
+    dispatch(addBookAction({ title:title, author:author, date:date, genre:genre }));
     console.log("submit");
   }
   return (

@@ -8,7 +8,7 @@ export function App() {
     <>
       <Header />
       <FilterBooks />
-      <MainList />
+      <MainList/>
       <AddBook />
     </>
   );

@@ -14,12 +14,13 @@ export const bookSlice = createSlice({
     },
 
     reducers:{
-        addBookAction: (currentBook, action)=>{
+        addBookAction: (state, action)=>{
             console.log(action);
-            currentBook.bookList.push(action.payload)
+            state.bookList.push(action.payload)
         }
     }
 
 });
 
-export const {addBookAction} = bookSlice.actions
+export const {addBookAction} = bookSlice.actions;
+export default bookSlice.reducer;

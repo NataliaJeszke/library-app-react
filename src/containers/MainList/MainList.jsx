@@ -1,15 +1,20 @@
 import { useSelector } from "react-redux";
 import { BookList } from "../../components/BookList/BookList";
+import { BookMetadataInput } from "../BookMetadataInput/BookMetadataInput";
 
-export function MainList(props) {
-  // const bookList = useSelector((store)=>store.BOOK.bookList);
-  // return (
-  //     <BookList items={bookList}/>
-  // );
+export function MainList() {
+const {bookList} = useSelector(state=>state.BOOK)
+console.log(bookList)
   return(
-    <main>
-      <input value={props.inputValue} />
-      <p>{props.inputValue}</p>
-    </main>
+    <ul>
+      <p></p>
+    {/* {listOfBooks.map((bookList)=>(
+      <BookMetadataInput title={bookList.title} author={bookList.author}/>
+    )
+    )} */}
+  </ul>
   )
 }
+
+
+// export default MainList;
