@@ -1,9 +1,10 @@
-export function BookComponent() {
+import bookComponentStyle from './BookComponentStyle.module.css'
+
+export function BookComponent({item}) {
   return (
-    <div>
-      <div>img</div>
-      <div>metadata</div>
-      <div>button delete</div>
-    </div>
+    <tr>
+      <th>{item.title}</th>
+      <td className={bookComponentStyle.author}>{item.author}</td>
+    </tr>
   );
 }
