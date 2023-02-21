@@ -1,5 +1,23 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 1px;
+    border-style: solid;
+    width:300px;
+    height: auto;
+}
+
+.title{
+
+}
+
 .author{
-    font-size: 30px;
-    color: aqua;
-    margin-right: 20px;
+
+}
+
+.date{}
+
+.genre{
+
 }
