@@ -1,6 +1,6 @@
 import bookComponentStyle from "./BookComponentStyle.module.css";
 
-export function BookComponent({ item }) {
+export function BookComponent({ item, index }) {
   return (
     <div className={bookComponentStyle.card}>
       <div>IMG</div>

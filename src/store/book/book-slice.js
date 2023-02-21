@@ -17,10 +17,15 @@ export const bookSlice = createSlice({
         addBookAction: (state, action)=>{
             console.log(action);
             state.bookList.push(action.payload)
+        },
+
+        deleteBook: (state, action)=>{
+            const index = state.bookList.indexOf(action.payload);
+            state.bookList.splice(index, 1)
         }
     }
 
 });
 
-export const {addBookAction} = bookSlice.actions;
+export const {addBookAction, deleteBook } = bookSlice.actions;
 export default bookSlice.reducer;
