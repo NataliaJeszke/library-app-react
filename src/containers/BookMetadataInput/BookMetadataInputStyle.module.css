@@ -1,5 +1,6 @@
 :root{
     --bgColorTile: #4db6acc8;
+    --bgButton: #004D40;
 }
     label{
         font-weight: bold;
@@ -8,6 +9,15 @@
 
     input{
         padding: 5px;
+    }
+
+    .button{
+        border-radius: 10px;
+        padding: 10px;
+        background-color: var(--bgButton);
+        color: white;
+        border-color: #004D40 !important;
+        margin-top: 40px;
     }
 
     .formBox{
