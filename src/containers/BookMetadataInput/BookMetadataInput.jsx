@@ -17,27 +17,27 @@ export function BookMetadataInput(props) {
     console.log("submit");
   }
   return (
-    <form onSubmit={submit} className={formStyle.metadataForm}>
+    <form onSubmit={submit} className={formStyle.formBox}>
       <label>
         Title:
-        <input type="text" onChange={(event) => setTitle(event.target.value)} />
+        <input type="text" onChange={(event) => setTitle(event.target.value)} className={formStyle.title}/>
       </label>
       <label>
         Author:
         <input
           type="text"
-          onChange={(event) => setAuthor(event.target.value)}
+          onChange={(event) => setAuthor(event.target.value)} className={formStyle.author}
         />
       </label>
       <label>
         Date of publish:
-        <input type="text" onChange={(event) => setDate(event.target.value)} />
+        <input type="text" onChange={(event) => setDate(event.target.value)} className={formStyle.date}/>
       </label>
       <label>
         Genre:
-        <input type="text" onChange={(event) => setGenre(event.target.value)} />
+        <input type="text" onChange={(event) => setGenre(event.target.value)} className={formStyle.genre}/>
       </label>
-      <button type="submit" value="Submit">
+      <button type="submit" value="Submit" className={formStyle.button}>
         Add Book
       </button>
     </form>
