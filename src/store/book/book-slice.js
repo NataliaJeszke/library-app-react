@@ -11,7 +11,6 @@ export const bookSlice = createSlice({
       // {title: 'Pentagram', author:'Jo Nesbo', data:'2003', genre:'Crime'},
       // {title: 'Łowcy Głów', author:'Jo Nesbo', data:'2008', genre:'Crime'},
     ],
-    searchTerm: "",
   },
 
   reducers: {
@@ -25,12 +24,9 @@ export const bookSlice = createSlice({
       state.bookList.splice(index, 1);
     },
 
-    changeSearchTerm(state, action) {
-      state.searchTerm = action.payload;
-    },
   },
 });
 
-export const { addBookAction, deleteBook, changeSearchTerm } =
+export const { addBookAction, deleteBook} =
   bookSlice.actions;
 export default bookSlice.reducer;

@@ -1,7 +1,3 @@
-//Pobierać wartości z inputów
-// Zapisać wartości do obiektu book z atrybutami
-// Wysłać obiekt book do storage (jak utworzyc x książek w storage Redux?/React)
-
 import formStyle from "./BookMetadataInputStyle.module.css";
 import { addBookAction } from "../../store/book/book-slice";
 import { useDispatch } from "react-redux";

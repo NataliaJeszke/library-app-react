@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { bookSlice } from "./book/book-slice";
-import { changeSearchTerm } from "./book/book-slice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
 import { combineReducers } from "@reduxjs/toolkit";
@@ -21,12 +20,4 @@ const store = configureStore({
     reducer: persistedReducer
 })
 
-// const store = configureStore({
-//     reducer:{
-//         BOOK: bookSlice.reducer
-//     }
-// })
-
-
-
-export {store, changeSearchTerm}
+export {store}
