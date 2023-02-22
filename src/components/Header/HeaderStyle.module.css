@@ -5,18 +5,24 @@
 .header{
     color: var(--fontColor);
     background-color: var(--bgHeaderColor); 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 .hero{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background: rgb(178,223,219);
     background: linear-gradient(275deg, rgba(178,223,219,1) 0%, rgba(0,77,64,1) 100%);
 
+}
+
+.h1{
+    text-align: center;
+    justify-content: center;
+}
+
+.img{
+    margin-left: 20px;
 }

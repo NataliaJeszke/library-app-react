@@ -8,11 +8,12 @@
     padding: 50px;
     gap:40px;
     width: auto;
-    background-color:var(--bgColorTile);
+    background-color:#4db6acc8;
 
 }
 
 .titleBox{
+
 }
 .titleH{
 font-size: 25px;
@@ -42,3 +43,8 @@ font-size: 20px;
 }
 .genreH{font-size: 20px;}
 .genre{font-size: 25px;}
+
+.img{
+    background-color: #E0F2F1;
+    padding: 20px;
+}

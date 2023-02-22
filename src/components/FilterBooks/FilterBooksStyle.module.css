@@ -3,11 +3,16 @@
 }
 .searchDiv{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: var(--bgColor);
-    gap: 100px;
+    gap: 20px;
+    align-items: center;
 }
 
-h5{
-    font-size: 30px;
+.searchBox{
+    width:50vw;
+    height: 5vh;
+    text-align: center;
 }
