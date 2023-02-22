@@ -1,6 +1,15 @@
+:root{
+    --bgColor: #B2DFDB;
+}
 .addBook{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+    background-color: var(--bgColor);
+}
+
+.header{
+    margin-top: 50px;
 }

@@ -20,6 +20,11 @@
         margin-top: 40px;
     }
 
+    .button:hover{
+        background-color: #00796B;
+        border-color: #00796B !important;
+    }
+
     .formBox{
         box-shadow: 3px 17px 24px 0px rgba(0, 29, 24, 0.549);
         border-radius: 20px;
