@@ -30,11 +30,12 @@
         border-radius: 20px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         margin-top: 20px;
         padding: 100px;
         gap:40px;
         background-color:var(--bgColorTile);
+        color: black;
 
     }
 

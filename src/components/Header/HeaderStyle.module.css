@@ -9,16 +9,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
 }
 
 .hero{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    gap:50px;
+    flex-wrap: wrap;
+    justify-content:space-around;
     background: rgb(178,223,219);
     background: linear-gradient(275deg, rgba(178,223,219,1) 0%, rgba(0,77,64,1) 100%);
+
 }

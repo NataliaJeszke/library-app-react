@@ -1,15 +1,9 @@
-.heroText{
-    font-size: 60px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-left: 100px;
-    color: var(--bgHeaderColor);
-}
 
 .leftSide{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-end;
+    align-items: flex-end;
+    background-color: #B2DFDB;
+    
 }

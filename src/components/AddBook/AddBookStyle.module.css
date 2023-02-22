@@ -3,13 +3,11 @@
 }
 .addBook{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     background-color: var(--bgColor);
-}
-
-.header{
-    margin-top: 50px;
+    border-radius: 25px 25px 0 0
 }
