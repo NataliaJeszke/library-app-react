@@ -4,21 +4,21 @@ export function BookComponent({ item, index }) {
   return (
     <div className={bookComponentStyle.card}>
       <div>IMG</div>
-      <div className={bookComponentStyle.title}>
-        <h4>Title</h4>
-        <h3>{item.title}</h3>
+      <div className={bookComponentStyle.titleBox}>
+        <h4 className={bookComponentStyle.titleH}>Title</h4>
+        <h3 className={bookComponentStyle.title}>{item.title}</h3>
       </div>
-      <div className={bookComponentStyle.author}>
-        <h4>Author</h4>
-        <p>{item.author}</p>
+      <div className={bookComponentStyle.authorBox}>
+        <h4 className={bookComponentStyle.authorH}>Author</h4>
+        <p className={bookComponentStyle.author}>{item.author}</p>
       </div>
-      <div className={bookComponentStyle.date}>
-        <h4>Date of publish</h4>
-        <p>{item.data}</p>
+      <div className={bookComponentStyle.dateBox}>
+        <h4 className={bookComponentStyle.dateH}>Date of publish</h4>
+        <p className={bookComponentStyle.date}>{item.data}</p>
       </div>
       <div className={bookComponentStyle.genre}>
-        <h4>Genre</h4>
-        <p>{item.genre}</p>
+        <h4 className={bookComponentStyle.genreH}>Genre</h4>
+        <p className={bookComponentStyle.genre}>{item.genre}</p>
       </div>
       </div>
   );

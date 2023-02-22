@@ -16,7 +16,7 @@
         padding: 10px;
         background-color: var(--bgButton);
         color: white;
-        border-color: #004D40 !important;
+        border-color: var(--bgButton) !important;
         margin-top: 40px;
     }
 
