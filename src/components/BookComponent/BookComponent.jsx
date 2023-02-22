@@ -3,7 +3,10 @@ import bookComponentStyle from "./BookComponentStyle.module.css";
 export function BookComponent({ item, index }) {
   return (
     <div className={bookComponentStyle.card}>
-      <div>IMG</div>
+      <div> <img
+        src="https://picsum.photos/200/300"
+        alt="book cover"
+      /></div>
       <div className={bookComponentStyle.titleBox}>
         <h4 className={bookComponentStyle.titleH}>Title</h4>
         <h3 className={bookComponentStyle.title}>{item.title}</h3>

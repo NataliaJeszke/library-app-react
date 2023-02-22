@@ -1,8 +1,36 @@
-.mainDiv{
+   .mainDiv{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:50px;
     justify-content: center;
     align-items: center;
-}
+   }
+   .button{
+        border-radius: 10px;
+        padding: 10px;
+        background-color: var(--bgButton);
+        color: white;
+        border-color: var(--bgButton) !important;
+        margin-top:10px
+    }
+
+    .button:hover{
+        background-color: #00796B;
+        border-color: #00796B !important;
+    }
+
+    .outputDiv{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        text-align: center;
+    }
+    .h2{
+        margin-top: 25px;
+    }
