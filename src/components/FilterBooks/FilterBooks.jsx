@@ -1,11 +1,22 @@
-import filterStyle from './FilterBooksStyle.module.css'
+import { useDispatch, useSelector } from "react-redux";
+import { changeSearchTerm } from "../../store";
+import filterStyle from "./FilterBooksStyle.module.css";
 
-export function FilterBooks(){
-    return(
-        <div className={filterStyle.searchDiv}>
-            <h5>Search for books</h5>
-            <input></input>
-            <button type="submit">Look Up</button>
-        </div>
-    );
+export function FilterBooks() {
+  const dispatch = useDispatch();
+
+  const handleSearch = (event) => {
+    dispatch(changeSearchTerm(event.target.value));
+  };
+
+  const searchTerm = useSelector((state) => {
+    return state.searchTerm;
+  });
+
+  return (
+    <div className={filterStyle.searchDiv}>
+      <label>Search by title</label>
+      <input value={searchTerm} onChange={handleSearch}></input>
+    </div>
+  );
 }
