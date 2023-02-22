@@ -1,19 +1,20 @@
 import { useDispatch, useSelector } from "react-redux";
 import { deleteBook } from "../../store/book/book-slice";
 import { BookComponent } from "../BookComponent/BookComponent";
+import { FilterBooks } from "../FilterBooks/FilterBooks";
+import { useState } from "react";
 import ListStyle from "./MainListStyle.module.css";
 
 export function MainList() {
-  // const { bookList } = useSelector((state) => state.BOOK);
-  // console.log(bookList);
+  const { bookList } = useSelector((state) => state.BOOK);
+  console.log(bookList);
 
-  const filterBookList = useSelector(({ BOOK: { bookList, searchTerm } }) => {
-    return bookList.filter((item) =>
-      item.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  });
+  const [searchTerm, setSearchTerm] = useState("")
 
-  console.log("to jest filterBookList__" + filterBookList);
+  const filteredBooks = bookList.filter(item=>{
+    const contentTitle = item.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+    return contentTitle;
+  })
 
   const dispatch = useDispatch();
 
@@ -23,8 +24,9 @@ export function MainList() {
 
   return (
     <>
+    <FilterBooks onTextChange={setSearchTerm} placeholder="search by title"/>
       <div className={ListStyle.mainDiv}>
-        {filterBookList.map((item, index) => (
+        {filteredBooks.map((item, index) => (
           <div key={index}>
             <BookComponent item={item} />
             <p>{index}</p>
