@@ -5,7 +5,7 @@ export function HeroBanner({}) {
   return (
     <div className={headerStyle.hero}>
         <LeftSideHero/>
-      <img src={banner} alt="Hero Banner" />
+      <img src={banner} alt="Hero Banner" className={headerStyle.img}/>
     </div>
   );
 }

@@ -1,23 +1,50 @@
 .card{
+    box-shadow: 3px 17px 24px 0px rgba(0, 29, 24, 0.549);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    border: 1px;
-    border-style: solid;
-    width:300px;
-    height: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 50px;
+    gap:40px;
+    width: auto;
+    background-color:#4db6acc8;
+
 }
 
-.title{
+.titleBox{
 
+}
+.titleH{
+font-size: 25px;
+}
+.title{
+    font-size: 35px;
+}
+
+.authorBox{
+
+}
+
+.authorH{
+font-size: 20px;
 }
 
 .author{
-
+    font-size: 25px;
 }
 
-.date{}
+.dateBox{}
+.dateH{ font-size: 20px;}
+.date{font-size: 25px;}
 
-.genre{
+.genreBox{
 
+}
+.genreH{font-size: 20px;}
+.genre{font-size: 25px;}
+
+.img{
+    background-color: #E0F2F1;
+    padding: 20px;
 }

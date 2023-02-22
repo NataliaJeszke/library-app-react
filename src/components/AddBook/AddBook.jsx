@@ -3,7 +3,7 @@ import { BookMetadataInput } from "../../containers/BookMetadataInput/BookMetada
 export function AddBook() {
   return (
     <div className={addBookStyle.addBook}>
-      <h2>Add book to your list</h2>
+      <h2 className={addBookStyle.header}>Add a book to your list</h2>
       <BookMetadataInput />
     </div>
   );

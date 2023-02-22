@@ -3,7 +3,7 @@ import { HeroBanner } from "./HeroBanner";
 export function Header() {
   return (
     <header className={headerStyle.header}>
-      <h1>Welcome to your Book List</h1>
+      <h1 className={headerStyle.h1}>Welcome to your Bookshelf App</h1>
       <HeroBanner />
     </header>
   );

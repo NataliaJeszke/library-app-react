@@ -19,31 +19,29 @@ export function BookMetadataInput(props) {
     console.log("submit");
   }
   return (
-    <Form>
-    <form onSubmit={submit} className={bookFormStyle.formBox}>
-      <label className={bookFormStyle.title}>
+    <form onSubmit={submit} className={formStyle.formBox}>
+      <label>
         Title:
-        <input type="text" onChange={(event) => setTitle(event.target.value)} className="p-1 ms-4" />
+        <input type="text" onChange={(event) => setTitle(event.target.value)} className={formStyle.title}/>
       </label>
       <label>
         Author:
         <input
           type="text"
-          onChange={(event) => setAuthor(event.target.value)} className="p-1 ms-1" 
+          onChange={(event) => setAuthor(event.target.value)} className={formStyle.author}
         />
       </label>
       <label>
         Date of publish:
-        <input type="text" onChange={(event) => setDate(event.target.value)} className={bookFormStyle.date}/>
+        <input type="text" onChange={(event) => setDate(event.target.value)} className={formStyle.date}/>
       </label>
       <label>
         Genre:
-        <input type="text" onChange={(event) => setGenre(event.target.value)} className="p-1 ms-3" />
+        <input type="text" onChange={(event) => setGenre(event.target.value)} className={formStyle.genre}/>
       </label>
-      <button type="submit" value="Submit">
+      <button type="submit" value="Submit" className={formStyle.button}>
         Add Book
       </button>
     </form>
-    </Form>
   );
 }
