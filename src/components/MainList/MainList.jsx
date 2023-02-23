@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { deleteBook } from "../../store/book/book-slice";
+import { deleteBookByNanoID  } from "../../store/book/book-slice";
 import { BookComponent } from "../BookComponent/BookComponent";
 import { FilterBooks } from "../FilterBooks/FilterBooks";
 import { useState } from "react";
@@ -18,20 +18,22 @@ export function MainList() {
 
   const dispatch = useDispatch();
  
- function handleRemove (index) {
-    dispatch(deleteBook(index));
+ function handleRemove (id) {
+
+    dispatch(deleteBookByNanoID(id));
   };
 
   return (
     <div className={listStyle.main}>
     <FilterBooks onTextChange={setSearchTerm} placeholder="search by title"/>
-      <h2 class={listStyle.h2}>Your Bookshelf</h2>
+    <div>
+      {bookList.length>0 ? <h2 className={listStyle.h2}>You have {bookList.length} books on your Bookshelf </h2>:<h2 className={listStyle.h2}>Your Bookshelf is empty &#128532;</h2>}
+    </div>
       <div className={listStyle.mainDiv}>
         {filteredBooks.map((item, index) => (
           <div key={index} className={listStyle.outputDiv}>
             <BookComponent item={item} />
-            <p>{index}</p>
-            <button onClick={() => handleRemove(index)} className={listStyle.button}>Delete</button>
+            <button onClick={() => handleRemove(item.id)} className={listStyle.button}>Delete</button>
           </div>
         ))}
       </div>
