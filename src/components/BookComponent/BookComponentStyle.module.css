@@ -12,18 +12,12 @@
 
 }
 
-.titleBox{
 
-}
 .titleH{
 font-size: 25px;
 }
 .title{
     font-size: 35px;
-}
-
-.authorBox{
-
 }
 
 .authorH{
@@ -34,13 +28,10 @@ font-size: 20px;
     font-size: 25px;
 }
 
-.dateBox{}
 .dateH{ font-size: 20px;}
 .date{font-size: 25px;}
 
-.genreBox{
 
-}
 .genreH{font-size: 20px;}
 .genre{font-size: 25px;}
 

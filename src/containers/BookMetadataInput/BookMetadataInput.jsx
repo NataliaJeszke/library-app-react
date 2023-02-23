@@ -1,9 +1,7 @@
 import { addBookAction } from "../../store/book/book-slice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import bookFormStyle from "./BookMetadataInputStyle.module.css"
+import formStyle from "./BookMetadataInputStyle.module.css"
 
 export function BookMetadataInput(props) {
   const dispatch = useDispatch();
