@@ -1,7 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Bookshelf App (ReactJS and Redux-toolkit)
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+Preview for the project (https://drive.google.com/file/d/17i50alkINnrSduxE7TJVrhr5Gyre0yPM/view?usp=sharing).
 ## Table of contents
 
 - [Overview](#overview)
@@ -23,48 +22,52 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 Users should be able to:
 
+- Add a book to a bookshelf with metadata
+- Delete a book
+- Filter results by title
+
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
+
 ### Screenshot
-- Mobile version
-https://drive.google.com/file/d/1ysflvvJ8v6jBcB9ExT6BNRIuvYLenGG9/view?usp=share_link
-- Desktop version
-https://drive.google.com/file/d/1O6whuyOuwvBjOBECgPTeuy85CGmijv58/view?usp=share_link
+Desktop version
+![](https://drive.google.com/file/d/17i50alkINnrSduxE7TJVrhr5Gyre0yPM/view?usp=sharing)
 
 
 ### Links
 
-- Solution URL: https://github.com/NataliaJeszke/product-preview-card
+- Solution URL: https://github.com/NataliaJeszke/library-app-react
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- ReactJS
+- Redux-toolkit
+- Bootstrap for ReactJS
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 
 
 ### What I learned
 
-Improve my media queries skill and responsive web design.
+A project where I learned ReactJS and Redux-toolkit with emphasis on the learning of the Redux storage use.
 
 
 ### Continued development
 
-In future I'd like to focus on markup language with Bootstrap to be more specific with tags.
+I would like to focus on furthering my ReactJS/Redux learning. 
 
 ## Resources
-Fontawesome for GitHub icon.
+React-icons for GitHub icon.
+Undraw.co for image
 
 ## Author
 
 - GitHub - [NataliaJeszke](https://github.com/NataliaJeszke)
-- Frontend Mentor - [@NataliaJeszke](https://www.frontendmentor.io/profile/NataliaJeszke)
 - Twitter - [@NataliaFrontend](https://www.twitter.com/NataliaFrontend)
 - Portfolio - https://nataliajeszke.github.io/portfolio/
+- Deployment - https://library-app-react-73d9j86iw-nataliajeszke.vercel.app/
 
 
