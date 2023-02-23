@@ -20,13 +20,18 @@ export const bookSlice = createSlice({
     },
 
     deleteBook: (state, action) => {
-      const index = state.bookList.indexOf(action.payload);
+      const index = action.payload;
       state.bookList.splice(index, 1);
     },
+
+    deleteBookByNanoID: (state,action)=>{
+      const id = action.payload;
+      state.bookList = state.bookList.filter(item=> item.id !==id);
+    }
 
   },
 });
 
-export const { addBookAction, deleteBook} =
+export const { addBookAction, deleteBook, deleteBookByNanoID} =
   bookSlice.actions;
 export default bookSlice.reducer;
