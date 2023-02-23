@@ -12,14 +12,14 @@ export function MainList() {
   const [searchTerm, setSearchTerm] = useState("")
 
   const filteredBooks = bookList.filter(item=>{
-    const contentTitle = item.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+    const contentTitle = item.title.toLowerCase().includes(searchTerm.toLowerCase())
     return contentTitle;
   })
 
   const dispatch = useDispatch();
-
-  const handleRemove = (book) => {
-    dispatch(deleteBook(book));
+ 
+ function handleRemove (index) {
+    dispatch(deleteBook(index));
   };
 
   return (
@@ -30,7 +30,8 @@ export function MainList() {
         {filteredBooks.map((item, index) => (
           <div key={index} className={listStyle.outputDiv}>
             <BookComponent item={item} />
-            <button onClick={handleRemove} className={listStyle.button}>Delete</button>
+            <p>{index}</p>
+            <button onClick={() => handleRemove(index)} className={listStyle.button}>Delete</button>
           </div>
         ))}
       </div>

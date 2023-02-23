@@ -20,7 +20,9 @@ export const bookSlice = createSlice({
     },
 
     deleteBook: (state, action) => {
-      const index = state.bookList.indexOf(action.payload);
+      // const index = state.bookList.indexOf(action.payload);
+
+      const index = action.payload;
       state.bookList.splice(index, 1);
     },
 
