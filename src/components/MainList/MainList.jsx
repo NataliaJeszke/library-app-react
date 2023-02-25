@@ -30,7 +30,8 @@ export function MainList() {
       <div>
         {bookList.length > 0 ? (
           <h2 className={listStyle.h2}>
-            You have {bookList.length} books on your Bookshelf{" "}
+            You have {bookList.length}{" "}
+            {bookList.length === 1 ? "book" : "books"} on your Bookshelf
           </h2>
         ) : (
           <h2 className={listStyle.h2}>Your Bookshelf is empty &#128532;</h2>
