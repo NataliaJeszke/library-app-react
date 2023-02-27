@@ -19,19 +19,22 @@ export const bookSlice = createSlice({
       state.bookList.push(action.payload);
     },
 
-    deleteBook: (state, action) => {
-      const index = action.payload;
-      state.bookList.splice(index, 1);
-    },
+    //// Deleting with index of array. It rerurned -1 and was deleting the last item of the array. Another problem came with dynamic indexing of objects in array. Removing by ID gave the best results.////
 
-    deleteBookByNanoID: (state,action)=>{
+    // deleteBook: (state, action) => {
+    //   const index = action.payload;
+    //   state.bookList.splice(index, 1);
+    // },
+
+    //// Removing items by ID ////
+
+    deleteBookByNanoID: (state, action) => {
       const id = action.payload;
-      state.bookList = state.bookList.filter(item=> item.id !==id);
-    }
-
+      state.bookList = state.bookList.filter((item) => item.id !== id);
+    },
   },
 });
 
-export const { addBookAction, deleteBook, deleteBookByNanoID} =
+export const { addBookAction, deleteBook, deleteBookByNanoID } =
   bookSlice.actions;
 export default bookSlice.reducer;
